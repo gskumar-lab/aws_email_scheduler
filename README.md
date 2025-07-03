@@ -18,14 +18,13 @@ This project is a serverless, zero-budget email marketing solution using AWS ser
 - `aws-email-scheduler/`  
   - `lambda/`  
     - `lambda_function.py` — AWS Lambda function to send personalized emails  
+    - `test_event_lambda.json` — Dummy event to test Lambda  
   - `templates/`  
     - `email_template.html` — HTML template with `{{FirstName}}` placeholder  
   - `data/`  
     - `contacts.csv` — Contact list (`FirstName,Email`)  
   - `iam/`  
-    - `iam_policy_s3_ses_permissions.json` — IAM policy for S3 + SES access  
-  - `events/`  
-    - `test_event_lambda.json` — Dummy event to test Lambda  
+    - `iam_policy_s3_ses_permissions.json` — IAM policy for S3 + SES access from lambda  
   - `README.md` — Project overview and setup  
 
 ## 🧪 Testing
